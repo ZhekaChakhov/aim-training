@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   color: #fff;
   font-family: "Khula", sans-serif;
@@ -55,12 +59,12 @@ h1 {
 }
 
 .time-list li {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .time-btn {
   background-color: transparent;
-  border: 2px solid #c0c0c0;
+  border: 0.125rem solid #c0c0c0;
   color: #fff;
   cursor: pointer;
   font-family: inherit;
@@ -69,7 +73,7 @@ h1 {
 }
 
 .time-btn:hover {
-  border: 2px solid #16d9e3;
+  border: 0.125rem solid #16d9e3;
   color: #16d9e3;
 }
 
@@ -86,11 +90,11 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: 31.25rem;
+  height: 31.25rem;
   background: linear-gradient(118.38deg, #29323c -4.6%, #485563 200.44%);
-  box-shadow: -8px -8px 20px #2a333d, 10px 7px 20px #475462;
-  border-radius: 30px;
+  box-shadow: -0.5rem -0.5rem 1.25rem #2a333d, 0.625rem 0.4375rem 1.25rem #475462;
+  border-radius: 1.875rem;
   overflow: hidden;
 }
 
@@ -99,4 +103,10 @@ h1 {
   position: absolute;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	html {
+    font-size: 12px;
+  }
 }
